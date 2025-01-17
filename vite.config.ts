@@ -25,7 +25,7 @@ const manifest: Partial<ManifestOptions> | false = {
 export default defineConfig({
     plugins: [react(), VitePWA({
         registerType: "autoUpdate",
-        workbox: {globPatterns: ["**/*.{html,js,ts,tsx,ico,png,svg,woff,woff2}"]},
+        workbox: {globPatterns: ["**/*.{html,js,ts,css,tsx,ico,png,svg,woff,woff2}"]},
         manifest: manifest
     })],
 })
