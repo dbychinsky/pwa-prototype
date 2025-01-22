@@ -3,6 +3,7 @@ import viteLogo from './assets/vite.svg'
 import pwaLogo from './assets/pwa.png'
 import './App.css'
 import Qr from './components/qr/Qr.tsx';
+import Biometrics from './components/biometrics/Biometrics.tsx';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             </div>
             <h1>progressive web application</h1>
             <h3>Прототип приложения</h3>
+            <Biometrics/>
             <Qr/>
         </>
     )
