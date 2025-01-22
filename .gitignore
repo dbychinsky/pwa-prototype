@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+.gradle
+
+# builds
+build
+lib
+dist
+
+.idea/
+.csrepo/
