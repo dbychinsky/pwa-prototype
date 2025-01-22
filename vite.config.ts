@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     plugins: [react()],
     build: {
-        outDir: "build/dist",
+        outDir: "dist",
         emptyOutDir: true,
         rollupOptions: {
             output: {
@@ -16,6 +16,14 @@ export default defineConfig({
                 entryFileNames: '[name]-[hash].js',
             },
         },
+        // rollupOptions: {
+        //     output: {
+        //         assetFileNames: () => {
+        //             return `[name][extname]`;
+        //         },
+        //         chunkFileNames: '[name].js',
+        //         entryFileNames: '[name].js',
+        //     },
+        // },
     },
-    base: "/pwaproto/app/"
 })

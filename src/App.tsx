@@ -2,6 +2,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import pwaLogo from './assets/pwa.png'
 import './App.css'
+import { Qr } from './components/qr/Qr.tsx';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             </div>
             <h1>progressive web application</h1>
             <h3>Прототип приложения</h3>
+            <Qr/>
         </>
     )
 }
