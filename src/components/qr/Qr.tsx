@@ -1,4 +1,4 @@
-import { Html5QrcodeScanner } from 'html5-qrcode';
+import { Html5QrcodeScanner, Html5QrcodeScanType } from 'html5-qrcode';
 import { useEffect, useState } from 'react';
 
 function Qr() {
@@ -12,6 +12,8 @@ function Qr() {
                 height: 250,
             },
             fps: 20,
+            supportedScanTypes: [
+                Html5QrcodeScanType.SCAN_TYPE_CAMERA]
         }, undefined);
 
         scanner.render(success, error)
@@ -31,7 +33,6 @@ function Qr() {
             <div id="reader" style={{width: 600}}></div>
             {scanResult}
         </>
-
     );
 }
 
