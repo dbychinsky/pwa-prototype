@@ -80,7 +80,7 @@ function Qr() {
 
     return (
         <>
-            <div id="reader" style={{width: 600}}></div>
+            <div id="reader" style={{maxWidth: 600}}></div>
             {scanResult}
         </>
     );

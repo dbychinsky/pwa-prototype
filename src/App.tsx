@@ -14,9 +14,13 @@ function App() {
                 <img src={pwaLogo} className="logo pwa" alt="Pwa logo"/>
             </div>
             <h1>progressive web application</h1>
-            <h3>Прототип приложения</h3>
-            <Biometrics/>
+            <h2>Прототип приложения</h2>
+
+            <h3>Qr</h3>
             <Qr/>
+
+            <h3>Биометрия</h3>
+            <Biometrics/>
         </>
     )
 }
