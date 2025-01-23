@@ -1,4 +1,4 @@
-import { Html5QrcodeScanner, Html5QrcodeScanType } from 'html5-qrcode';
+import { Html5QrcodeScanner } from 'html5-qrcode';
 import { useEffect, useState } from 'react';
 
 function Qr() {
@@ -12,8 +12,11 @@ function Qr() {
                 height: 250,
             },
             fps: 20,
-            supportedScanTypes: [
-                Html5QrcodeScanType.SCAN_TYPE_CAMERA]
+            // supportedScanTypes: [
+            //     Html5QrcodeScanType.SCAN_TYPE_CAMERA],
+            videoConstraints: {
+                facingMode: {exact: "environment"},
+            },
         }, undefined);
 
         scanner.render(success, error)
